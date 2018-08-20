@@ -1,0 +1,12 @@
+{
+    "company_name": "Red Hat", 
+    "contact_email": "jlopezyg@redhat.com", 
+    "contact_name": "Francisco Javier Lopez", 
+    "hostname": "071be9e8266e4e5dbd86eab605dee820", 
+    "instance_count": 50, 
+    "license_date": 1562838874, 
+    "license_key": "", 
+    "license_type": "enterprise", 
+    "subscription_name": "Ansible Tower by Red Hat (50 Managed Nodes), RHT Internal", 
+    "trial": true
+}

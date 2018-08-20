@@ -1,0 +1,28 @@
+---
+- block:
+  - name: Install Tower
+    unarchive:
+      src: ansible-tower-setup-latest.tar.gz
+      dest: /root/
+      
+  - name: copy lic_file to remote host
+    copy: 
+      src: "{{ TOWERLIC }}" 
+      dest: /root
+      owner: root
+      group: root
+      mode: 0644 
+
+  - name: place inventory file
+    template:
+      src: inventory.j2
+      dest: /root/ansible-tower-setup-3.2.5/inventory
+      owner: root
+      group: root
+      mode: 0644
+  
+  - name: start install
+    shell: /root/ansible-tower-setup-3.2.5/setup.sh 
+    
+  tags: installtower
+

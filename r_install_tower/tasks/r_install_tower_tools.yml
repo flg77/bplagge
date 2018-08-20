@@ -1,0 +1,9 @@
+---
+- block:
+  - name: Install Tower Tools
+    yum: 
+      name: "{{ item }}" 
+      state: latest
+    with_items:
+    - python2-ansible-tower-cli 
+  tags: towertools

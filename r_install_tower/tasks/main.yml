@@ -1,0 +1,7 @@
+---
+# main task yaml import or includes  
+#
+#
+# import_tasks: 
+- import_tasks: r_install_tower.yml
+- import_tasks: r_install_tower_tools.yml 
